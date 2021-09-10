@@ -9,11 +9,41 @@
         font-size: 18px
         line-height: 24px
         font-family: 'Alegreya', sans-serif
-        padding: 55px 0 79px
+        padding: 20px 0 79px
         .menu-filter-item
             margin-right: 40px
+            padding-top: 30px
+            cursor: pointer
+            background-position: top center
+            background-repeat: no-repeat
+            position: relative
+            &::before
+                position: absolute
+                top: 0
+                margin: auto
+                width: 100%
+                opacity: 0
+                transition: opacity 0.5s ease-out
+            &:hover
+                &::before
+                    opacity: 1
         .active
             color: #E52D2D
+        .all
+            &::before
+                content: url(/icons/filters/all.svg)
+        .spicy
+            &::before
+                content: url(../icons/filters/spicy.svg)
+        .meat
+            &::before
+                content: url(../icons/filters/meat.svg)
+        .cheese
+            &::before
+                content: url(../icons/filters/cheese.svg)
+        .vegan
+            &::before
+                content: url(../icons/filters/vegan.svg)        
     .menu-item
         width: 304px
         height: 540px
