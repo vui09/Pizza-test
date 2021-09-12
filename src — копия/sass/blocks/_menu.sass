@@ -1,8 +1,4 @@
 .menu
-    .menu-list
-        display: flex
-        justify-content: space-between
-        flex-wrap: wrap
     .menu-title
     padding-top: 112px
     text-align: center
@@ -33,19 +29,19 @@
                     opacity: 1
         .active
             color: #E52D2D
-        .all-filter
+        .all
             &::before
                 content: url(/icons/filters/all.svg)
-        .spicy-filter
+        .spicy
             &::before
                 content: url(../icons/filters/spicy.svg)
-        .meat-filter
+        .meat
             &::before
                 content: url(../icons/filters/meat.svg)
-        .cheese-filter
+        .cheese
             &::before
                 content: url(../icons/filters/cheese.svg)
-        .vegan-filter
+        .vegan
             &::before
                 content: url(../icons/filters/vegan.svg)        
     .menu-item
@@ -56,19 +52,8 @@
         padding: 40px 30px
         box-sizing: border-box
         margin-bottom: 55px
-        position: relative
         &:hover
             box-shadow: 0px 2px 10px rgba(165, 169, 176, 0.5)
-        .item-icon
-            position: absolute
-            left: 16px
-            top: 16px 
-            opacity: 0
-            transition: opacity 0.5s ease-out
-            &:nth-child(2)
-                top: 46px   
-        .icon-show
-            opacity: 1   
         .menu-item-img
             .border-d
                 border: 1px dashed #DCDFE2
@@ -87,7 +72,7 @@
                 width: 150px
                 height: 150px  
                 margin: 10px auto 0  
-        .img-item
+        img
             position: absolute
             left: 50%
             top: 50%
@@ -152,6 +137,3 @@
         .btn
             width: 100%
             padding: 14px 0
-
-.hide
-    display: none
