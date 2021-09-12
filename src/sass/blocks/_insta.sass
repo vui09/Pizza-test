@@ -7,3 +7,24 @@
         font-family: Alegreya
         line-height: 30px
         margin-bottom: 46px
+    &-photo
+        display: grid
+        grid-template: repeat(2,1fr)/repeat(5,1fr)
+        img
+            width: 100%
+
+@media (max-width: 992px) 
+    .insta
+        &-photo
+            grid-template: repeat(2,1fr)/repeat(3,1fr)
+            img
+                &:nth-child(n+7)
+                    display: none
+
+@media (max-width: 600px)
+    .insta
+        &-photo
+            grid-template: repeat(2,1fr)/repeat(2,1fr)
+            img
+                &:nth-child(n+5)
+                    display: none
