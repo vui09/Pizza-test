@@ -113,30 +113,96 @@
             <div class="menu-title">
                 <h2>Выберите пиццу</h2>
                 <ul class="menu-filter">
-                    <li class="menu-filter-item all active">Все</li>
-                    <li class="menu-filter-item spicy">Острые</li>
-                    <li class="menu-filter-item meat">Мясные</li>
-                    <li class="menu-filter-item cheese">Сырные</li>
-                    <li class="menu-filter-item vegan">Веганские</li>
+                    <li class="menu-filter-item all-filter active">Все</li>
+                    <li class="menu-filter-item spicy-filter">Острые</li>
+                    <li class="menu-filter-item meat-filter">Мясные</li>
+                    <li class="menu-filter-item cheese-filter">Сырные</li>
+                    <li class="menu-filter-item vegan-filter">Веганские</li>
                 </ul>
-                <div class="box"></div>
             </div>
             <div class="menu-list">
-                <div class="menu-item">
+                <div class="menu-item spicy">
+                    <img class="item-icon" src="icons/filters/spicy.svg" alt="">
                     <div class="menu-item-img">
                         <span class="border-d s40">
                             <span class="border-d s30">
                                 <span class="border-d s20">
-                                    <img class="i-30" src="img/hamСheese.png" alt="">
+                                    <img class="i-30 img-item" src="img/italy.png" alt="">
                                 </span>
                             </span> 
                         </span>  
                     </div>
-                    <div class="menu-item-name">
-                        Итальянская
+                    <div class="menu-info">
+                        <div class="menu-item-name">
+                            Итальянская
+                        </div>
+                        <div class="menu-item-ingredients">
+                            Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик
+                        </div>
+                    </div>  
+                    <div class="menu-item-size">
+                        <span>Размер, см:</span>
+                        <div class="size">
+                            <div class="size-btn">20</div>
+                            <div class="size-btn active">30</div>
+                            <div class="size-btn">40</div>
+                        </div>
                     </div>
-                    <div class="menu-item-ingredients">
-                        Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик
+                    <div class="menu-item-price">
+                        от 699 руб.
+                    </div>
+                    <button class="btn">Заказать</button>
+                </div>
+                <div class="menu-item meat">
+                    <img class="item-icon" src="icons/filters/meat.svg" alt="">
+                    <div class="menu-item-img">
+                        <span class="border-d s40">
+                            <span class="border-d s30">
+                                <span class="border-d s20">
+                                    <img class="img-item i-40" src="img/margarita.png" alt="">
+                                </span>
+                            </span> 
+                        </span>  
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-item-name">
+                            Маргарита
+                        </div>
+                        <div class="menu-item-ingredients">
+                            Тесто со шпинатом, молодой сыр и колбаски, много колбасок
+                        </div>
+                    </div>    
+                    <div class="menu-item-size">
+                        <span>Размер, см:</span>
+                        <div class="size">
+                            <div class="size-btn">20</div>
+                            <div class="size-btn">30</div>
+                            <div class="size-btn active">40</div>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">
+                        от 479 руб.
+                    </div>
+                    <button class="btn">Заказать</button>
+                </div>
+                <div class="menu-item meat">
+                    <img class="item-icon" src="icons/filters/meat.svg" alt="">
+                    <div class="menu-item-img">
+                        <span class="border-d s40">
+                            <span class="border-d s30">
+                                <span class="border-d s20">
+                                    <img class="img-item i-30" src="img/barbecue.png" alt="">
+                                </span>
+                            </span> 
+                        </span>  
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-item-name">
+                            Барбекю
+                        </div>
+                        <div class="menu-item-ingredients">
+                            Цыплёнок (маленький кура), оливки, моцарелла, соус барбекю
+                        </div>
                     </div>
                     <div class="menu-item-size">
                         <span>Размер, см:</span>
@@ -148,6 +214,295 @@
                     </div>
                     <div class="menu-item-price">
                         от 699 руб.
+                    </div>
+                    <button class="btn">Заказать</button>
+                </div>
+                <div class="menu-item vegan">
+                    <img class="item-icon" src="icons/filters/vegan.svg" alt="">
+                    <div class="menu-item-img">
+                        <span class="border-d s40">
+                            <span class="border-d s30">
+                                <span class="border-d s20">
+                                    <img class="img-item i-20" src="img/veg.png" alt="">
+                                </span>
+                            </span> 
+                        </span>  
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-item-name">
+                            Вегетарианская
+                        </div>
+                        <div class="menu-item-ingredients">
+                            Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик
+                        </div>
+                    </div>
+                    <div class="menu-item-size">
+                        <span>Размер, см:</span>
+                        <div class="size">
+                            <div class="size-btn active">20</div>
+                            <div class="size-btn">30</div>
+                            <div class="size-btn">40</div>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">
+                        от 399 руб.
+                    </div>
+                    <button class="btn">Заказать</button>
+                </div>
+                <div class="menu-item meat">
+                    <img class="item-icon" src="icons/filters/meat.svg" alt="">
+                    <img class="item-icon" src="icons/filters/spicy.svg" alt="">
+                    <div class="menu-item-img">
+                        <span class="border-d s40">
+                            <span class="border-d s30">
+                                <span class="border-d s20">
+                                    <img class="img-item i-30" src="img/meat.png" alt="">
+                                </span>
+                            </span> 
+                        </span>  
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-item-name">
+                            Мясная
+                        </div>
+                        <div class="menu-item-ingredients">
+                            Цыплёнок (маленький кура), оливки, моцарелла, соус барбекю
+                        </div>
+                    </div>
+                    <div class="menu-item-size">
+                        <span>Размер, см:</span>
+                        <div class="size">
+                            <div class="size-btn">20</div>
+                            <div class="size-btn active">30</div>
+                            <div class="size-btn">40</div>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">
+                        от 699 руб.
+                    </div>
+                    <button class="btn">Заказать</button>
+                </div>
+                <div class="menu-item vegan">
+                    <img class="item-icon" src="icons/filters/vegan.svg" alt="">
+                    <div class="menu-item-img">
+                        <span class="border-d s40">
+                            <span class="border-d s30">
+                                <span class="border-d s20">
+                                    <img class="img-item i-30" src="img/vegetable.png" alt="">
+                                </span>
+                            </span> 
+                        </span>  
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-item-name">
+                            Овощная
+                        </div>
+                        <div class="menu-item-ingredients">
+                            Тесто со шпинатом, молодой сыр и колбаски, много колбасок
+                        </div>
+                    </div>
+                    <div class="menu-item-size">
+                        <span>Размер, см:</span>
+                        <div class="size">
+                            <div class="size-btn">20</div>
+                            <div class="size-btn active">30</div>
+                            <div class="size-btn">40</div>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">
+                        от 479 руб.
+                    </div>
+                    <button class="btn">Заказать</button>
+                </div>
+                <div class="menu-item spicy">
+                    <img class="item-icon" src="icons/filters/spicy.svg" alt="">
+                    <div class="menu-item-img">
+                        <span class="border-d s40">
+                            <span class="border-d s30">
+                                <span class="border-d s20">
+                                    <img class="img-item i-40" src="img/roman.png" alt="">
+                                </span>
+                            </span> 
+                        </span>  
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-item-name">
+                            Римская
+                        </div>
+                        <div class="menu-item-ingredients">
+                            Цыплёнок (маленький кура), оливки, моцарелла, соус барбекю
+                        </div>
+                    </div>
+                    <div class="menu-item-size">
+                        <span>Размер, см:</span>
+                        <div class="size">
+                            <div class="size-btn">20</div>
+                            <div class="size-btn active">30</div>
+                            <div class="size-btn">40</div>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">
+                        от 699 руб.
+                    </div>
+                    <button class="btn">Заказать</button>
+                </div>
+                <div class="menu-item cheese">
+                    <img class="item-icon" src="icons/filters/cheese.svg" alt="">
+                    <div class="menu-item-img">
+                        <span class="border-d s40">
+                            <span class="border-d s30">
+                                <span class="border-d s20">
+                                    <img class="img-item i-30" src="img/mushroom.png" alt="">
+                                </span>
+                            </span> 
+                        </span>  
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-item-name">
+                            С грибами
+                        </div>
+                        <div class="menu-item-ingredients">
+                            Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик
+                        </div>
+                    </div>
+                    <div class="menu-item-size">
+                        <span>Размер, см:</span>
+                        <div class="size">
+                            <div class="size-btn">20</div>
+                            <div class="size-btn active">30</div>
+                            <div class="size-btn">40</div>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">
+                        от 399 руб.
+                    </div>
+                    <button class="btn">Заказать</button>
+                </div>
+                <div class="menu-item cheese">
+                    <img class="item-icon" src="icons/filters/cheese.svg" alt="">
+                    <div class="menu-item-img">
+                        <span class="border-d s40">
+                            <span class="border-d s30">
+                                <span class="border-d s20">
+                                    <img class="img-item i-30" src="img/cheese.png" alt="">
+                                </span>
+                            </span> 
+                        </span>  
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-item-name">
+                            Сырная
+                        </div>
+                        <div class="menu-item-ingredients">
+                            Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик
+                        </div>
+                    </div>
+                    <div class="menu-item-size">
+                        <span>Размер, см:</span>
+                        <div class="size">
+                            <div class="size-btn">20</div>
+                            <div class="size-btn active">30</div>
+                            <div class="size-btn">40</div>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">
+                        от 699 руб.
+                    </div>
+                    <button class="btn">Заказать</button>
+                </div>
+                <div class="menu-item cheese">
+                    <img class="item-icon" src="icons/filters/cheese.svg" alt="">
+                    <div class="menu-item-img">
+                        <span class="border-d s40">
+                            <span class="border-d s30">
+                                <span class="border-d s20">
+                                    <img class="img-item i-30" src="img/4cheese.png" alt="">
+                                </span>
+                            </span> 
+                        </span>  
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-item-name">
+                            Четыре сыра
+                        </div>
+                        <div class="menu-item-ingredients">
+                            Тесто со шпинатом, молодой сыр и колбаски, много колбасок
+                        </div>
+                    </div>
+                    <div class="menu-item-size">
+                        <span>Размер, см:</span>
+                        <div class="size">
+                            <div class="size-btn">20</div>
+                            <div class="size-btn active">30</div>
+                            <div class="size-btn">40</div>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">
+                        от 479 руб.
+                    </div>
+                    <button class="btn">Заказать</button>
+                </div>
+                <div class="menu-item cheese">
+                    <img class="item-icon" src="icons/filters/cheese.svg" alt="">
+                    <div class="menu-item-img">
+                        <span class="border-d s40">
+                            <span class="border-d s30">
+                                <span class="border-d s20">
+                                    <img class="img-item i-30" src="img/pepperoni.png" alt="">
+                                </span>
+                            </span> 
+                        </span>  
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-item-name">
+                            Пепперони Фреш с томатами
+                        </div>
+                        <div class="menu-item-ingredients">
+                            Цыплёнок (маленький кура), оливки, моцарелла, соус барбекю
+                        </div>
+                    </div>    
+                    <div class="menu-item-size">
+                        <span>Размер, см:</span>
+                        <div class="size">
+                            <div class="size-btn">20</div>
+                            <div class="size-btn active">30</div>
+                            <div class="size-btn">40</div>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">
+                        от 699 руб.
+                    </div>
+                    <button class="btn">Заказать</button>
+                </div>
+                <div class="menu-item meet">
+                    <img class="item-icon" src="icons/filters/meat.svg" alt="">
+                    <div class="menu-item-img">
+                        <span class="border-d s40">
+                            <span class="border-d s30">
+                                <span class="border-d s20">
+                                    <img class="img-item i-30" src="img/hamСheese.png" alt="">
+                                </span>
+                            </span> 
+                        </span>  
+                    </div>
+                    <div class="menu-info">
+                        <div class="menu-item-name">
+                            Ветчина и сыр
+                        </div>
+                        <div class="menu-item-ingredients">
+                            Томат, шампиньон, сыр, оливки, чили, соус, тесто, базилик
+                        </div>
+                    </div>    
+                    <div class="menu-item-size">
+                        <span>Размер, см:</span>
+                        <div class="size">
+                            <div class="size-btn">20</div>
+                            <div class="size-btn active">30</div>
+                            <div class="size-btn">40</div>
+                        </div>
+                    </div>
+                    <div class="menu-item-price">
+                        от 399 руб.
                     </div>
                     <button class="btn">Заказать</button>
                 </div>

@@ -20,27 +20,68 @@ $(document).on('ready', function() {
 
     $('.all-filter').click(function(){
       $(".menu-item").css('display', 'block');
+      if ($(window).width() < 767){
+        $(".menu-item").css('display', 'flex');
+      }
     });
 
     $('.spicy-filter').click(function(){
       $(".menu-item").css('display', 'none');
-      $(".menu-item").filter(".spicy").css('display', 'block');
+      let spicy = $(".menu-item").filter(".spicy")
+      spicy.css('display', 'block');
+      if ($(window).width() < 767){
+        spicy.css('display', 'flex');
+      }
     });
 
     $('.meat-filter').click(function(){
       $(".menu-item").css('display', 'none');
-      $(".menu-item").filter(".meat").css('display', 'block');
+      let meat = $(".menu-item").filter(".meat");
+      meat.css('display', 'block');
+      if ($(window).width() < 767){
+        meat.css('display', 'flex');
+      }
     });
 
     $('.cheese-filter').click(function(){
       $(".menu-item").css('display', 'none');
-      $(".menu-item").filter(".cheese").css('display', 'block');
+      let cheese = $(".menu-item").filter(".cheese");
+      cheese.css('display', 'block');
+      if ($(window).width() < 767){
+        cheese.css('display', 'flex');
+      }
     });
 
     $('.vegan-filter').click(function(){
       $(".menu-item").css('display', 'none');
-      $(".menu-item").filter(".vegan").css('display', 'block');
+      let vegan = $(".menu-item").filter(".vegan")
+      vegan.css('display', 'block');
+      if ($(window).width() < 767){
+        vegan.css('display', 'flex');
+      }
     });
+
+    $('.sb-20').click(function(){
+      let item = $(this).closest('.menu-item');
+      item.find('.img-item').removeClass().addClass('img-item i-20');
+      item.find('.size-btn').removeClass('active');
+      $(this).addClass('active');
+    });
+
+    $('.sb-30').click(function(){
+      let item = $(this).closest('.menu-item');
+      item.find('.img-item').removeClass().addClass('img-item i-30');
+      item.find('.size-btn').removeClass('active');
+      $(this).addClass('active');
+    });
+
+    $('.sb-40').click(function(){
+      let item = $(this).closest('.menu-item');
+      item.find('.img-item').removeClass().addClass('img-item i-40');
+      item.find('.size-btn').removeClass('active');
+      $(this).addClass('active');
+    });
+
 
   });  
 
@@ -67,3 +108,19 @@ $(window).on('load resize', function() {
     }
   });
 
+
+
+
+
+
+  $(window).load(function(){
+		$(".col-3 input").val("");
+		
+		$(".input-effect input").focusout(function(){
+			if($(this).val() != ""){
+				$(this).addClass("has-content");
+			}else{
+				$(this).removeClass("has-content");
+			}
+		})
+	});
