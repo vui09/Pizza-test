@@ -29,6 +29,10 @@ h4
     font-family: 'Alegreya', sans-serif
 a
     color: #000
+
+.btn-wrap
+    background: #E52D2D
+    border-radius: 5px
 .btn
     background: #E52D2D
     color: #fff
@@ -50,6 +54,46 @@ a
     overflow: hidden
 .nav-mobile
     display: none
+
+.animated-button, .animated-button:visited 
+        position: relative
+        z-index: 5
+        display: block
+        overflow: hidden
+        -webkit-transition: all 1s ease
+        -moz-transition: all 1s ease
+        -o-transition: all 1s ease
+        transition: all 1s ease
+
+.animated-button:after, .animated-button:visited:after 
+        content: ""
+        position: absolute
+        height: 0%
+        left: 50%
+        top: 50%
+        width: 150%
+        z-index: -1
+        -webkit-transition: all 0.75s ease 0s
+        -moz-transition: all 0.75s ease 0s
+        -o-transition: all 0.75s ease 0s
+        transition: all 0.75s ease 0s
+
+.animated-button:hover, .animated-button:visited:hover 
+	    color: #FFF
+
+.animated-button:hover:after, .animated-button:visited:hover:after 
+	    height: 450%
+
+.animated-button.back-animate:after 
+        background: #FF3C3C
+        -moz-transform: translateX(-50%) translateY(-50%)
+        -ms-transform: translateX(-50%) translateY(-50%)
+        -webkit-transform: translateX(-50%) translateY(-50%)
+        transform: translateX(-50%) translateY(-50%)
+
+.animated-button.back-animate:hover:after 
+        height: 140%
+        opacity: 1
     
 @import 'blocks/header'
 @import 'blocks/mobile'

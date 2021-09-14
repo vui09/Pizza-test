@@ -71,6 +71,12 @@
     h3
         font-size: 24px
         line-height: 30px
+    .insta
+        &-photo
+            grid-template: repeat(2,1fr)/repeat(3,1fr)
+            img
+                &:nth-child(n+7)
+                    display: none
 
 @media (max-width: 910px) 
     .promo
@@ -115,7 +121,27 @@
         margin-top: 105px
         .promo-img
             width: 50%
-            top: 46px    
+            top: 46px  
+    .popup
+        width: 95vw 
+        height: 95vh
+        margin: 30px auto
+    .popup-form 
+        .row  
+            display: block   
+    .input-text 
+        width: 100%
+
+    .footer
+        padding: 23px 0
+        .container
+            display: block
+            text-align: center
+            .footer-contact
+                margin-left: 0
+                .work-time
+                    padding: 3px 0 10px
+
 @media (max-width: 700px)
     .header 
         .header-block
@@ -131,6 +157,7 @@
             padding: 0
             min-height: auto
 
+
 @media (max-width: 600px)
     .promo-block 
         .btn
@@ -141,6 +168,16 @@
     h3 
         font-size: 20px
         line-height: 25px
+
+    .popup-info
+        width: 100%
+        margin-bottom: 15px
+    .insta
+        &-photo
+            grid-template: repeat(2,1fr)/repeat(2,1fr)
+            img
+                &:nth-child(n+5)
+                    display: none
         
 @media (max-width: 500px)
     .container
@@ -173,3 +210,18 @@
         .promo-block
             font-size: 16px
             line-height: 24px     
+
+@media (max-width: 350px)
+    .popup 
+        .popup-total 
+            margin-bottom: 15px
+            .sum
+                font-size: 20px
+        &-price
+            width: 100px
+            padding-right: 10px
+    .popup-quantity
+        width: 125px 
+        .quantity 
+            width: 50px
+            height: 30px
