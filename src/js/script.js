@@ -138,28 +138,73 @@ $(document).on('ready', function() {
     $(this).addClass('active');
   });
 
-
 });  
 
+
+     $(window).on('load resize', function() {
+      if ($(window).width() < 600) {
+        $('.action-block').not('.slick-initialized').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true
+        });
+      } else {
+        $("#items.slick-initialized").slick("unslick");
+      }
+  
+     });
+
+
 $(window).on('scroll', function() {
-  var $nav = $('.header'),
+  let $nav = $('.header'),
+      mobile = $('.mobile .humburger'),
       scroll = $(this).scrollTop();
 
   if (scroll > 10) {
       $nav.addClass('header-scroll');
+      mobile.addClass('m-scroll');
   } else {
       $nav.removeClass('header-scroll');
+      mobile.removeClass('m-scroll');
   }
 });  
 
-$(window).on('load resize', function() {
-  if ($(window).width() < 600) {
-    $('.action-block').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: true
-    });
-  } else {
-    $("#items.slick-initialized").slick("unslick");
-  }
+
+jQuery(function($) {
+
+  const section = $('.section'),
+        nav = $('.navigation'),
+        navHeight = nav.outerHeight(); 
+
+  window.addEventListener('orientationchange', function () {
+      navHeight = nav.outerHeight();
+  }, false);
+
+  $(window).on('scroll', function () {
+      const position = $(this).scrollTop();
+
+      section.each(function () {
+          const top = $(this).offset().top - navHeight - 5,
+                bottom = top + $(this).outerHeight();
+
+          if (position >= top && position <= bottom) {
+              nav.find('a').removeClass('active');
+              section.removeClass('active');
+
+              $(this).addClass('active');
+              nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+          }
+      });
+  });
+
+  nav.find('a').on('click', function () {
+      const id = $(this).attr('href');
+
+      $('html, body').animate({
+          scrollTop: $(id).offset().top - navHeight
+      }, 487);
+
+      return false;
+  });
+
 });

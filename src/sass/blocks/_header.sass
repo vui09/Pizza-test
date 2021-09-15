@@ -5,7 +5,7 @@
     right: 0
     left: 0
     z-index: 9
-    background: #fff
+    background: $primary-color-light
     .header-block
         padding: 44px 0 30px
         display: flex
@@ -23,12 +23,12 @@
                 &:last-child
                     margin-right: 0    
                 &-link
-                    font-family: 'Alegreya', sans-serif
+                    font-family: $font-family-secondary
                     text-decoration: none
                     &:hover
-                        color: #E52D2D 
+                        color: $active-color
                 .active
-                    color: #E52D2D  
+                    color: $active-color  
         .contact
             display: flex
             &-icon
@@ -36,13 +36,13 @@
                 display: flex
                 margin-right: 12px
             &-phone
-                font-family: 'Alegreya', sans-serif
+                font-family: $font-family-secondary
                 font-size: 24px
                 line-height: 33px
             &-work
                 font-size: 12px
                 line-height: 18px
-                color: #848A9A  
+                color: $secondary-color
         .contact-mobile
             display: none  
         .order
@@ -53,14 +53,14 @@
             margin: 0 44px 0 60px
             cursor: pointer
             &-title
-                font-family: 'Alegreya', sans-serif 
+                font-family: $font-family-secondary
                 font-size: 18px
                 line-height: 24px
                 letter-spacing: 1px
             &-name 
                 font-size: 12px
                 line-height: 18px  
-                color: #848A9A
+                color: $secondary-color
             &-counter
                 position: absolute
                 top: -5px
@@ -70,11 +70,11 @@
                 display: flex
                 align-items: center
                 justify-content: center
-                background: #E52D2D
+                background: $active-color
                 border-radius: 10px
                 font-size: 11px
                 line-height: 17px
-                color: #fff
+                color: $primary-color-light
         .language
             display: flex
             align-items: center
@@ -86,7 +86,7 @@
             font-size: 18px
             line-height: 24px
             text-transform: uppercase
-            font-family: 'Alegreya', sans-serif
+            font-family: $font-family-secondary
 .humburger
     position: relative
     width: 24px
@@ -103,7 +103,7 @@
         height: 3px
         opacity: 1
         border-radius: 1.5px
-        background: #000
+        background: $primary-color
         margin-bottom: 5px
         transform: rotate(0deg)
         transition: .25s ease-in-out
@@ -118,7 +118,7 @@
         margin-bottom: 0
 .open 
     span
-        background: #fff
+        background: $primary-color-light
         &:nth-child(1) 
             top: 8px
             transform: rotate(135deg)

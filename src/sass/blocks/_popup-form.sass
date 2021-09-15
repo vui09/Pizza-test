@@ -22,13 +22,13 @@
         height: 20px
         width: 3px 
         border-radius: 1px
-        background-color: #000
+        background-color: $primary-color
     &::before 
         transform: rotate(45deg)
     &::after 
         transform: rotate(-45deg)
 .popup
-    background: #FFFFFF
+    background: $primary-color-light
     border-radius: 5px
     width: 704px
     height: 80vh
@@ -38,7 +38,7 @@
     position: relative
     overflow-y: scroll
     &-title
-        font-family: Alegreya
+        font-family: $font-family-secondary
         font-weight: bold
         font-size: 32px
         line-height: 40px
@@ -49,7 +49,7 @@
         flex-wrap: wrap
         align-items: center
         justify-content: space-between
-        border-top: 1px solid #DCDFE2
+        border-top: 1px solid $border-color
         padding: 16px 0
         .close 
             top: 15px
@@ -70,7 +70,7 @@
     &-item-img
         margin: 0 9px
         .border-d
-            border: 1px dashed #DCDFE2
+            border: 1px dashed $border-color
             display: block
             border-radius: 100%
         .s40
@@ -107,7 +107,7 @@
             margin-left: -28px
             margin-top: -28px 
     &-item-name
-        font-family: Alegreya
+        font-family: $font-family-secondary
         font-weight: 800
         font-size: 18px
         line-height: 24px 
@@ -122,14 +122,14 @@
             width: 24px
             background: #C5CBD5
             border-radius: 100%
-            color: #fff
+            color: $primary-color-light
             font-weight: bold
             font-size: 20px
             border: 0
             line-height: 24px
             cursor: pointer
             &:hover
-                background: #E52D2D
+                background: $active-color
         .quantity
             width: 60px
             height: 40px
@@ -141,7 +141,7 @@
             margin: 0 8px
     &-price
         width: 120px
-        font-family: Alegreya
+        font-family: $font-family-secondary
         font-weight: bold
         font-size: 24px
         line-height: 33px
@@ -149,20 +149,20 @@
         padding-right: 25px
         box-sizing: border-box
     .popup-total
-        font-family: Alegreya
+        font-family: $font-family-secondary
         font-weight: bold
         font-size: 18px
         line-height: 24px
         text-align: right
         padding-right: 20px
-        border-top: 1px solid #dcdfe2
+        border-top: 1px solid $border-color
         .sum
             font-size: 32px
             line-height: 44px
             margin-left: 20px
     &-form
         .form-title
-            font-family: Alegreya
+            font-family: $font-family-secondary
             font-weight: bold
             font-size: 18px
             line-height: 24px 
@@ -173,7 +173,7 @@
         .attention
             font-size: 12px
             line-height: 18px
-            color: #848A9A
+            color: $secondary-color
         .row
             display: flex
             justify-content: space-between
@@ -186,7 +186,7 @@
 
   .label-text
     color: #A6A6A6
-    background: #fff
+    background: $primary-color-light
     cursor: text
     font-size: 16px
     line-height: 18px
@@ -253,10 +253,10 @@ input[type="radio"]:not(:checked) + label:before
 
 input[type="radio"]:checked + label:hover:before, 
 input[type="radio"]:not(:checked) + label:hover:before
-	border-color: #000
+	border-color: $primary-color
 
 input[type="radio"]:checked + label:before
-	border: 2px solid #000
+	border: 2px solid $primary-color
   
 input[type="radio"]:checked + label:before, 
 input[type="radio"]:not(:checked) + label:before 
@@ -278,7 +278,7 @@ input[type="radio"]:not(:checked) + label:after
 	width: 10px
 	height: 10px
 	border-radius: 100%
-	background-color: #E52D2D
+	background-color: $active-color
   
 input[type="radio"]:not(:checked) + label:after 
 	opacity: 0
