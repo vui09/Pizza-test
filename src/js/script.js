@@ -100,10 +100,10 @@ $(document).on('ready', function() {
   });
 
   $('.btn-minus').click(function() {
-      let $input = $(this).parent().find('.quantity');
-      let count = parseInt($input.val()) - 1;
+      let input = $(this).parent().find('.quantity');
+      let count = parseInt(input.val()) - 1;
       count = count < 1 ? 1 : count;
-      $input.val(count);
+      input.val(count);
   });
   $('.btn-plus').click(function() {
       let input = $(this).parent().find('.quantity');
@@ -112,12 +112,29 @@ $(document).on('ready', function() {
       input.val(parseInt(count));
   }); 
 
-  // $( ".quantity" ).change(function() {
-  //   let count = parseInt(this.val());
-  //   if(count != 1){
-  //     $('.btn-minus').removeAttr('disabled');
-  //   }
-  // });
+
+  $('.btn-q').click(function() {
+    let btnMinus = $(this).parent().find('.btn-minus');
+    let input = $(this).parent().find('.quantity');
+    let count = parseInt(input.val());
+    if(count <= 1){
+      btnMinus.addClass('disabled');
+    }
+    else{
+      btnMinus.removeClass('disabled');
+    }
+});
+
+let link = $(".menu-item .btn"),
+  counter = $(".order-counter").text(),
+  count = parseInt(counter);
+  
+ link.on('click', function(e) {
+  e.preventDefault();
+  count++;
+  $(".order-counter").text(count);
+ });
+
 
   $('.popup-item .close').click(function(){
     $(this).parent().hide();

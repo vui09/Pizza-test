@@ -55,17 +55,18 @@ a
 .nav-mobile
     display: none
 
-.animated-button, .animated-button:visited 
+.animated-button
         position: relative
         z-index: 5
         display: block
         overflow: hidden
+        box-sizing: border-box
         -webkit-transition: all 1s ease
         -moz-transition: all 1s ease
         -o-transition: all 1s ease
         transition: all 1s ease
 
-.animated-button:after, .animated-button:visited:after 
+.animated-button:after
         content: ""
         position: absolute
         height: 0%
@@ -78,10 +79,10 @@ a
         -o-transition: all 0.75s ease 0s
         transition: all 0.75s ease 0s
 
-.animated-button:hover, .animated-button:visited:hover 
+.animated-button:hover 
 	    color: #FFF
 
-.animated-button:hover:after, .animated-button:visited:hover:after 
+.animated-button:hover:after
 	    height: 450%
 
 .animated-button.back-animate:after 
